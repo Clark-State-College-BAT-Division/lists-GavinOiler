@@ -14,3 +14,13 @@
 #Your entered foods are:
 #pizza, beef jerkey, rice triangles, steamed chinese bun, fried chicken 
 #You entered a total of 62 characters
+foods = []
+for i in range(5):
+    foods.append(input(f"Enter a food {i+1}/5: "))
+chars = 0
+for x in foods:
+    for x in x:
+        chars = chars + 1
+print("your entered foods are: ")
+print(", ".join(foods))
+print(f"you entered a total number of {chars} characters")
